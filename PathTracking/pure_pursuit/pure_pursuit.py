@@ -91,7 +91,7 @@ class Trajectory:
                 ind = ind + 1 if (ind + 1) < len(self.cx) else ind
                 distance_next_index = state.calc_distance(self.cx[ind], self.cy[ind])
                 if distance_this_index < distance_next_index:
-                    ind = ind-1
+                    ind = ind - 1
                     break
                 distance_this_index = distance_next_index
             self.old_nearest_point_index = ind
